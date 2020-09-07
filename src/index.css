@@ -4,6 +4,7 @@
 
 body {
   margin: 0;
+  padding:0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -17,15 +18,41 @@ code {
 }
 
 button { 
-  width: 8rem;
-  height: 4rem;
-  font-size: .9rem;
+  width: 100%;
+  height: 10rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
   padding:1rem;
   border-radius: .5rem;
   margin:1rem;
   border:1px solid silver;
+  transition: ease-in-out all .3s;
 }
 
+button:hover { 
+  background:rgb(156, 156, 156);
+  color:white;
+  font-size: 1.6rem;
+}
+  
+
 .mainContainer {
+  margin:auto;
+  background:black;
+  width:100%;
+  height:100vh;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  }
+
+.buttonContainer {
+  width:30%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background:rgb(202, 0, 0);
+  margin:1rem;
+  border-radius: 10px;
 }

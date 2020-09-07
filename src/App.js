@@ -8,7 +8,7 @@ export const App = () => {
   return (
     <div className="mainContainer">
       {data.map((item) => (
-        <Buttons name={item.ButtonText} />
+        <Buttons name={item.ButtonText} key={item.ButtonText} />
       ))}
     </div>
     
