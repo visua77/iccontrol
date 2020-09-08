@@ -4,8 +4,8 @@ export const Buttons = (props) => {
 
   return (
     <div className="buttonContainer"> 
-      <button onClick={(e) => console.log(e.target)}><span className="caption">{props.name}</span>
-      <img src={`./img/${props.img}.jpg`} alt="image" className="sportImg"/></button>
+      <button id={props.id}onClick={(e) => console.log('The button with id'+props.id+' was clicked!')}><span className="caption">{props.name}</span>
+  <img src={`./img/${props.img}.jpg`} alt="image" className="sportImg"/></button>
     </div>
   )
 }
