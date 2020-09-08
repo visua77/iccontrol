@@ -5,19 +5,21 @@ import data2 from './json/qib3.json'
 
 export const App = () => {
 
+  //Setting state
   const [toggle, setToggle] = useState(false)
   const [icdata, setIcdata] = useState(data)
+  const [imgset, setImgset] = useState(1)
 
-  //console.log(data[0].QuickButtonGroupOid)
-  
   const toggler = () => {
     setToggle(prev => !prev)
     if(icdata === data){
       setIcdata(data2)
-    }
+      setImgset(2)
+      }
     if(icdata === data2){
       setIcdata(data)
-    }
+      setImgset(1)
+      }
   }
   
   return (
@@ -26,7 +28,7 @@ export const App = () => {
       <i className={toggle ? 'fas fa-toggle-on' : 'fas fa-toggle-off'} onClick={toggler}></i></div>
       <div className="mainContainer">
       {icdata.map((item, index) => (
-        <Buttons name={item.ButtonText} id={item.QuickButtonGroupOid} img={index} key={item.ButtonText} />
+        <Buttons name={item.ButtonText} id={item.QuickButtonGroupOid} img={index} key={item.ButtonText} set={imgset} />
       ))}
       </div>
       <div className="footer"><span className="copyright">Copyright <a href="mailto:nicznet@hotmail.com">Niclas Binnquist</a> 2020</span></div>
