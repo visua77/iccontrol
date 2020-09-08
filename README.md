@@ -1,19 +1,14 @@
-# Technigo React Starter App
+# IC Control tech test
 
-This app has been generated using `create-react-app`, then cleaned up a little so we have a project with just the elements we need to get started.
+Tech test for IC Control:
 
-Add components in the `src` folder and use them in `src/app.js` to get started.
+Your task is to present .json-data as buttons and their attributes. Focus on tooling, ui and when the user clicks a button it should console-log which button that was clicked.
 
-## Usage
+My take on it:
 
-1. On GitHub, click the 'use this template' button to create a new repo on your account
-1. Clone the new repo to your computer
-1. Install required dependencies with npm: `npm install`
-1. Start the project: `npm start`
+I used react as my main "tool" to make a nice, fast web-app. I added some extra functionality by adding
+a toggle to switch between the two datasets, the toggle also change images depending on dataset.
 
-Alternatively, if you don't want a new git repo on your account;
+Its fast, clean and of course responsive.
 
-1. Download & extract the [latest release](https://github.com/Technigo/react-starter/releases/latest) from GitHub
-1. Open the directory in the terminal: `cd /path/to/react-starter`
-1. Install required dependencies with npm: `npm install`
-1. Start the project: `npm start`
+The deployed version: https://infallible-hopper-4c19c7.netlify.app/

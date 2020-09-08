@@ -2,6 +2,7 @@ import React from 'react'
 
 export const Buttons = (props) => {
 
+  //Setting variable for detecting which imgset to use
   let imgno 
  
   if (props.set === 1) {
