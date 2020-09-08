@@ -126,6 +126,21 @@ a:hover {
   color:black;
 }
 
+i  {
+  color:gray;
+  font-size: 2rem;
+  padding-top: 70px;
+  transition: ease-in-out all .3s;
+  cursor: pointer;
+}
+
+i:hover  {
+  color:white;
+  font-size: 2rem;
+  padding-top: 70px;
+  
+}
+
 .caption {
   position: absolute;
   background:silver;

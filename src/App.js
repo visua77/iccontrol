@@ -22,7 +22,8 @@ export const App = () => {
   
   return (
     <div className="mainWrapper">
-      <div className="header"><div><img src="./img/ICCMS_low-q-logo_2_1.png" alt="logoimg"/></div><span className={toggle ? 'active' : 'default'} onClick={toggler}>Toggle</span></div>
+      <div className="header"><div><img src="./img/ICCMS_low-q-logo_2_1.png" alt="logoimg"/></div>
+      <i className={toggle ? 'fas fa-toggle-on' : 'fas fa-toggle-off'} onClick={toggler}></i></div>
       <div className="mainContainer">
       {icdata.map((item, index) => (
         <Buttons name={item.ButtonText} img={index} key={item.ButtonText} />
