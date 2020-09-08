@@ -8,7 +8,7 @@ export const App = () => {
   
   return (
     <div className="mainWrapper">
-      <div className="header"><img src="./img/ICCMS_low-q-logo_2_1.png" alt="logoimg"/><span className="toggle">Toggle</span></div>
+      <div className="header"><div><img src="./img/ICCMS_low-q-logo_2_1.png" alt="logoimg"/></div><span className="toggle">Toggle</span></div>
       <div className="mainContainer">
       {data.map((item, index) => (
         <Buttons name={item.ButtonText} img={index} key={item.ButtonText} />
