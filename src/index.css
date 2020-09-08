@@ -35,6 +35,17 @@ button:hover {
   background:rgb(156, 156, 156);
   
 }
+
+a {
+  text-decoration: none;
+  color:white;
+  transition: ease-in-out all .3s;
+}
+
+a:hover {
+  text-decoration: none;
+  color:gray;
+}
   
 .mainContainer {
   margin:auto;
@@ -97,14 +108,21 @@ button:hover {
   
 }
 
-.toggle {
+.default {
   padding-top: 80px;
   color:white;
   transition: ease-in-out all .3s;
   cursor: pointer;
 }
 
-.toggle:hover {
+.active {
+  padding-top: 80px;
+  color:red;
+  transition: ease-in-out all .3s;
+  cursor: pointer;
+}
+
+.default:hover {
   color:black;
 }
 
